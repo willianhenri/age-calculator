@@ -56,11 +56,16 @@ input {
     padding: 15px;
     border-radius: 5px;
     border: 1px solid var(--Light-grey);
+    color: var(--Off-black);
+    font: var(--poppins-bold);
+    font-size: 18px;
 }
 
 input:focus {
     outline: 1px solid var(--purple);
 }
+
+
 
 label {
     font: var(--poppins-bold);
