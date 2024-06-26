@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+    --poppins-bold: normal 700 16px 'Poppins', sans-serif;
+    --poppins-regular-italic: italic 400 16px 'Poppins', sans-serif;
+    --poppins-extrabold-italic: italic 800 16px 'Poppins', sans-serif;
+
+
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+
+    
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Off-white);
+}
+
+.inputs {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--Light-grey);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container {
+    padding: 40px;
+    background-color: var(--White);
+    border-radius: 10px 10px 80px 10px;
+    width: 600px;
+}
+
+input {
+    width: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Light-grey);
+}
+
+input:focus {
+    outline: 1px solid var(--purple);
+}
+
+label {
+    font: var(--poppins-bold);
+    color: var(--Smokey-grey);
+    font-size: 12px;
+}
+
+::placeholder {
+    font: var(--poppins-bold);
+    color: var(--Smokey-grey);
+    
+}
+
+button {
+    background-color: var(--purple);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: var(--Off-black);
+}
+
+.result {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font: var(--poppins-extrabold-italic);
+    font-size: 40px;
+}
+
+p {
+    color: var(--purple);
+}
+
+.error-message {
+    color: var(--light-red);
+    font-size: 12px;
+    display: none;
+  }
+  
+  input.error {
+    border-color: var(--light-red);
+  }
+
+  label.error {
+    color: var(--light-red);
+  }
+  
+
+  @media (max-width: 600px) {
+    .container{
+        width: 350px;
+        
+    }
+
+    .result {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font: var(--poppins-extrabold-italic);
+        font-size: 20px;
+    }
+
+    input {
+        width: 80px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid var(--Light-grey);
+    }
+  }
