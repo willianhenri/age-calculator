@@ -79,22 +79,14 @@ label {
     
 }
 
-.age-input {
-    position: relative;
-}
-
-
 button {
     background-color: var(--purple);
     border: none;
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
+    margin-top: 20px;
     margin-bottom: 20px;
-
-    position: absolute;
-    right: 350px;
-    top: 359px;
 }
 
 button:hover {
@@ -147,16 +139,5 @@ p {
         padding: 15px;
         border-radius: 5px;
         border: 1px solid var(--Light-grey);
-    }
-
-    button {
-    
-        position: absolute;
-        right: 170px;
-        top: 248px;
-    }
-
-    .output {
-        margin-top: 100px;
     }
   }
